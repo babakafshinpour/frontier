@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "frontier"
+version = "0.1.0"
+description = ""
+authors = ["Babak Afhin-Pour"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = {version = "^2.1.2+cu118", source = "pytorch"}
+torchvision = {version = "^0.16.2+cu118", source = "pytorch"}
+gym = "^0.26.2"
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
